@@ -58,3 +58,11 @@ package's graphics are produced using pstricks.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 1-1
++ Revision: 787818
+- Import texlive-vocaltract
+- Import texlive-vocaltract
+
