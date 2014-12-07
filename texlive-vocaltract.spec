@@ -6,7 +6,7 @@
 # catalog-version 1
 Name:		texlive-vocaltract
 Version:	1
-Release:	7
+Release:	8
 Summary:	Visualise the vocal tract using LaTeX and PStricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/vocaltract
