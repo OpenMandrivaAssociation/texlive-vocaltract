@@ -1,18 +1,12 @@
-# revision 25629
-# category Package
-# catalog-ctan /graphics/pstricks/contrib/vocaltract
-# catalog-date 2012-03-13 11:09:15 +0100
-# catalog-license lppl
-# catalog-version 1
 Name:		texlive-vocaltract
-Version:	1
-Release:	10
+Version:	25629
+Release:	1
 Summary:	Visualise the vocal tract using LaTeX and PStricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/vocaltract
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/vocaltract.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/vocaltract.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/vocaltract.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/vocaltract.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -29,12 +23,12 @@ allows for animation when no other vector is available. The
 package's graphics are produced using pstricks.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -51,18 +45,10 @@ package's graphics are produced using pstricks.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Mar 27 2012 Paulo Andrade <pcpa@mandriva.com.br> 1-1
-+ Revision: 787818
-- Import texlive-vocaltract
-- Import texlive-vocaltract
-
