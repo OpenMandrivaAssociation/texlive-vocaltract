@@ -3,7 +3,7 @@ Version:	25629
 Release:	2
 Summary:	Visualise the vocal tract using LaTeX and PStricks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/vocaltract
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/vocaltract
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/vocaltract.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/vocaltract.doc.r%{version}.tar.xz
